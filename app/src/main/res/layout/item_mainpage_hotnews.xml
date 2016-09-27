@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#3983AE"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hot_news_tv_title_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="35dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="《人民日报》报道我校毕业生巴拉巴拉巴拉巴拉"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/hot_news_tv_time_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="35dp"
+            android:text="2016-9-5"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <com.android.qdhhh.fakebeizhongyi.view.RoundImageView
+        android:id="@+id/sircle_iv_id"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:border_width="10dp"
+        app:border_color="@color/colorDefault"
+        android:src="@drawable/btn_camera_all_click"
+         />
+
+    <TextView
+        android:id="@+id/hot_news_tv_body_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_title_id"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="20dp"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:text="宁波诺丁汉大学是经中国教育部批准，由英国诺丁汉大学与浙江万里学院合作创办，在中国设立的第一家引进世界一流大学优质教学资源、具有独立法人资格和独立校区的中外合作大学。学校由中国科学院院士、前复旦大学校长杨福家教授担任校长，陆明彦教授担任执行校长。根据泰晤士高等教育以及上海交通大学公布的权威排行榜，诺丁汉大学位列世界高校百强。"
+        android:textColor="#3983AE"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/hot_news_line_iv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ll_title_id"
+        android:layout_alignRight="@+id/hot_news_tv_body_id"
+        android:layout_below="@+id/ll_title_id"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/hot_news_line" />
+</RelativeLayout>

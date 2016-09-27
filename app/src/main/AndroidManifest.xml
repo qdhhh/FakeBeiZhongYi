@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.qdhhh.fakebeizhongyi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Activity_SaplashPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_Login" />
+        <activity android:name=".Activity_Guide" />
+        <activity android:name=".Activity_Setting" />
+        <activity android:name=".Activity_CreatCard" />
+        <activity android:name=".Activity_ResetPWD" />
+        <activity android:name=".Activity_FindBackPwd" />
+        <activity android:name=".me.setting.Activity_Me_Setting" />
+        <activity android:name=".me.setting.Activity_Remind" />
+        <activity
+            android:name=".me.Activity_MyInfo"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".me.setting.Activity_Me_Change" />
+        <activity android:name=".me.setting.Activity_Privacy" />
+        <activity android:name=".me.setting.Activity_Feedback" />
+        <activity android:name=".me.setting.Activity_About" />
+        <activity android:name=".me.Activity_Document" />
+        <activity android:name=".me.Activity_Position" />
+        <activity android:name=".me.Activity_Collection" />
+        <activity android:name=".mainpage.Activity_News_Detail" />
+        <activity android:name=".me.setting.Activity_Setting_RemindGroup"></activity>
+    </application>
+
+</manifest>

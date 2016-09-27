@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.qdhhh.fakebeizhongyi.me.setting.Activity_Feedback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorDefault">
+
+        <ImageView
+            android:id="@+id/me_feedback_backicon_iv_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/tongyong_bar_icon1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/me_setting_feedback_title"
+            android:textColor="@color/whitetext"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/me_setting_feedback_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/me_setting_feedback_post"
+            android:textColor="@color/whitetext"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/tongyong_sousuo_kuang"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:gravity="top|left"
+            android:background="@null"
+            android:id="@+id/me_setting_feedback_et_id"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/me_setting_feedback_tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="right"
+            android:text="@string/me_setting_feedback_num" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.qdhhh.fakebeizhongyi.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_fl_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_bottom_tab" />
+
+    <View
+        android:id="@+id/main_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/main_bottom_tab"
+        android:background="#393939" />
+
+    <LinearLayout
+        android:id="@+id/main_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whitetext"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/main_rl_chat"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/main_iv_chat"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerHorizontal="true"
+                android:padding="3dp"
+                android:src="@drawable/select_main_chat" />
+
+            <TextView
+                android:id="@+id/tv_communicate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_iv_chat"
+                android:layout_centerHorizontal="true"
+                android:text="会话" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_contacts"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/main_iv_contacts"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerHorizontal="true"
+                android:padding="3dp"
+                android:src="@drawable/select_main_contacts" />
+
+            <TextView
+                android:id="@+id/tv_connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_iv_contacts"
+                android:layout_centerHorizontal="true"
+                android:text="联系人" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:background="#00000000"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_function"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/main_iv_function"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerHorizontal="true"
+                android:padding="3dp"
+                android:src="@drawable/select_main_function" />
+
+            <TextView
+                android:id="@+id/tv_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_iv_function"
+                android:layout_centerHorizontal="true"
+                android:text="服务" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_me"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/main_iv_me"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerHorizontal="true"
+                android:padding="3dp"
+                android:src="@drawable/select_main_me" />
+
+            <TextView
+                android:id="@+id/tv_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_iv_me"
+                android:layout_centerHorizontal="true"
+                android:text="我" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/main_iv_mainpage"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:padding="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/select_main_mainpage" />
+
+
+</RelativeLayout>

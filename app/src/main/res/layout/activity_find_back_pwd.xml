@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.qdhhh.fakebeizhongyi.Activity_FindBackPwd">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorDefault">
+
+        <ImageView
+            android:id="@+id/findback_pwd_backicon_iv_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/tongyong_bar_icon1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/findback_pwd"
+            android:textColor="@color/whitetext"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="14dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/findback_pwd_title"
+            android:textColor="@color/textColor_black_02"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/tongyong_denglu_bg_i4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/findback_pwd_username"
+                android:textColor="@color/textColor_black_01"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/findback_pwd_et_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:hint="@string/findback_pwd_username_hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/textColor_black_01"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/tongyong_denglu_bg_i4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/findback_pwd_name"
+                android:textColor="@color/textColor_black_01"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/findback_pwd_et_realname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:hint="@string/findback_pwd_name_hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/textColor_black_01"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/tongyong_denglu_bg_i4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/findback_pwd_IDcard"
+                android:textColor="@color/textColor_black_01"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/findback_pwd_et_idcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:hint="@string/findback_pwd_IDcard_hint"
+                android:inputType="text"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:textColor="@color/textColor_black_01"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/tongyong_denglu_bg_i4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/text_join_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/findback_pwd_in_time"
+                android:textColor="@color/textColor_black_01"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:layout_toRightOf="@id/text_join_time"
+                android:background="@drawable/tongyong_down_bar_line" />
+
+            <TextView
+                android:id="@+id/findback_pwd_tv_intime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="22dp"
+                android:layout_toLeftOf="@+id/findback_pwd_iv_intime"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/findback_pwd_in_time_hint"
+                android:textColor="@color/textColor_black_01"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/findback_pwd_iv_intime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="30dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/shezhi_san" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/tongyong_denglu_bg_i4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/text_join_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/findback_pwd_out_time"
+                android:textColor="@color/textColor_black_01"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:layout_toRightOf="@id/text_join_time2"
+                android:background="@drawable/tongyong_down_bar_line" />
+
+            <TextView
+                android:id="@+id/findback_pwd_tv_outtime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="22dp"
+                android:layout_toLeftOf="@+id/findback_pwd_iv_outtime"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/findback_pwd_out_time_hint"
+                android:textColor="@color/textColor_black_01"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/findback_pwd_iv_outtime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="30dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/shezhi_san" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/tongyong_denglu_bg_i4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/findback_pwd_out_class"
+                android:textColor="@color/textColor_black_01"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/findback_pwd_et_class"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:background="#00000000"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:hint="@string/findback_pwd_out_class_hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/textColor_black_01"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/tongyong_denglu_bg_i4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/findback_pwd_out_mates"
+                android:textColor="@color/textColor_black_01"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/findback_pwd_et_mates"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:hint="@string/findback_pwd_out_mates_hint"
+                android:inputType="text"
+                android:textColor="@color/textColor_black_01"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/findback_pwd_bt_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_login_button"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/findback_pwd_out_post"
+            android:textColor="@color/whitetext"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_error_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/textColor_black_03"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

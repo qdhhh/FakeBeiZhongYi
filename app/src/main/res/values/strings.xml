@@ -1,0 +1,225 @@
+<resources>
+
+
+    <string name="mainpage_title">主页</string>
+    <string name="chat_title">会话</string>
+    <string name="contacts_title">联系人</string>
+    <string name="function_title">服务</string>
+    <!-- mainpage界面的TabName -->
+    <string-array name="TabName">
+        <item>新闻头条</item>
+        <item>校友风采</item>
+        <item>校友会活动</item>
+        <item>自己人</item>
+    </string-array>
+
+
+    <string-array name="function_Names">
+        <item>校友圈</item>
+        <item>校友活动</item>
+        <item>工作&amp;实习&amp;租房</item>
+        <item>找校友</item>
+        <item>附近校友</item>
+        <item>校友会活动</item>
+        <item>自己人</item>
+        <item>在线调查</item>
+        <item>推荐给好友</item>
+    </string-array>
+
+    <string-array name="me_Names">
+        <item>我的资料</item>
+        <item>我的文件</item>
+        <item>我的职位</item>
+        <item>我的相册</item>
+        <item>我的收藏</item>
+        <item>我的活动</item>
+        <item>我的积分</item>
+        <item>消息盒子</item>
+        <item>关于求助</item>
+    </string-array>
+
+
+    <string name="app_name">FakenNuoDingHan</string>
+
+
+    <!-- 登录界面 -->
+    <string name="login_username_hint">请输入手机号</string>
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="login_login">登录</string>
+    <string name="login_forgetpwd">忘记密码</string>
+    <string name="login_creat_card">创建名片</string>
+
+
+    <!-- 找回密码界面 -->
+    <string name="findback_pwd">找回密码</string>
+    <string name="findback_pwd_title">亲，忘记密码了吧，填写完整资料，让我们来一起认证一下吧</string>
+    <string name="findback_pwd_username">账　　号</string>
+    <string name="findback_pwd_username_hint">请输入您的账号</string>
+    <string name="findback_pwd_name_hint">请输入您的真实姓名</string>
+    <string name="findback_pwd_name">姓　　名</string>
+    <string name="findback_pwd_IDcard">身 份 证</string>
+    <string name="findback_pwd_IDcard_hint">请输入您的身份证号码</string>
+    <string name="findback_pwd_in_time">入学时间</string>
+    <string name="findback_pwd_in_time_hint">请选择您的入学时间</string>
+    <string name="findback_pwd_out_time">毕业时间</string>
+    <string name="findback_pwd_out_time_hint">请选择您的毕业时间</string>
+    <string name="findback_pwd_out_class">班　　级</string>
+    <string name="findback_pwd_out_class_hint">请输入您的班级</string>
+    <string name="findback_pwd_out_mates">同班同学</string>
+    <string name="findback_pwd_out_mates_hint">请填写三个以上同班同学，用；隔开</string>
+    <string name="findback_pwd_out_post">提交资料</string>
+
+
+    <!-- 注册界面 -->
+    <string name="regist">注册</string>
+    <string name="regist_on">提交</string>
+    <string name="regist_name">姓名</string>
+    <string name="regist_gender">性别</string>
+    <string name="regist_phone">手机</string>
+    <string name="regist_email">邮箱</string>
+    <string name="regist_pwd">密码</string>
+    <string name="regist_degree">学历</string>
+    <string name="regist_college">学院</string>
+    <string name="regist_major">专业</string>
+    <string name="regist_class">班级</string>
+    <string name="regist_intime">入学时间</string>
+    <string name="regist_outtime">毕业时间</string>
+    <string name="regist_number">学号</string>
+    <string name="regist_college_hint">请选择学院(没有选择可填写)</string>
+    <string name="regist_notice1">轻触右上角的“提交”按钮，即表示您同意</string>
+    <string name="regist_notice2">《北中医大学软件许可及服务协议》</string>
+
+
+    <string-array name="genderArray">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="degreeArray">
+        <item>专科</item>
+        <item>本科</item>
+        <item>双学位</item>
+        <item>硕士</item>
+        <item>博士</item>
+    </string-array>
+
+    <!-- 我的设置界面 -->
+
+    <string name="me_setting_title">设置</string>
+    <string name="me_setting_item_remind">提醒</string>
+    <string name="me_setting_item_change">修改</string>
+    <string name="me_setting_item_privacy">隐私</string>
+    <string name="me_setting_item_cache">缓存</string>
+    <string name="me_setting_item_feedback">反馈</string>
+    <string name="me_setting_item_score">评分</string>
+    <string name="me_setting_item_about">关于</string>
+
+    <string name="me_setting_item_logout">退出登录</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- 我的设置提醒界面 -->
+
+    <string name="me_setting_remind">消息提醒</string>
+    <string name="me_setting_push">消息推送</string>
+    <string name="me_setting_receivepush">接收消息推送通知</string>
+    <string name="me_setting_chat_remind">会话提醒</string>
+    <string name="me_setting_chat_new_remind">接收新消息通知</string>
+    <string name="me_setting_chat_shock_remind">震动</string>
+    <string name="me_setting_chat_sound_remind">声音</string>
+    <string name="me_setting_group_remind">群聊天提醒</string>
+    <string name="me_setting_group_setting">群聊天设置</string>
+    <string name="me_setting_no_remind">免打扰时间</string>
+    <string name="me_setting_no_remind_setting">关闭</string>
+
+    <string name="me_setting_remind_group">群聊天设置</string>
+
+    <string name="me_setting_groupremind_group">新消息通知</string>
+
+    <!-- 我的修改界面 -->
+    <string name="me_setting_change_title">修改</string>
+    <string name="me_setting_change_name">用户名</string>
+    <string name="me_setting_change_pwd">密码修改</string>
+    <string name="me_setting_change_new_name">新用户名</string>
+    <string name="me_setting_change_post">提交</string>
+    <string name="me_setting_change_pwd_current">当前密码</string>
+    <string name="me_setting_change_pwd_new">新密码</string>
+    <string name="me_setting_change_pwd_ensure">确认密码</string>
+    <string name="me_setting_change_name_notice">提示：请输入4-20位字符，数字、英文、“-”或组合
+    用户名在客户端只能够修改一次，请谨慎修改，如果由于特殊原因需要修改请联系管理员</string>
+
+    <!-- 我的隐私界面 -->
+
+    <string name="me_setting_privacy_title">隐私设置</string>
+    <string name="me_setting_privacy_communicate">通讯录</string>
+    <string name="me_setting_privacy_need_authenticate">加我为朋友时需要验证</string>
+    <string name="me_setting_privacy_visiable">个人资料对陌生人可见</string>
+    <string name="me_setting_privacy_picture">我的相册</string>
+    <string name="me_setting_privacy_visiable_pic">不让ta看我的相册</string>
+
+
+    <!-- 我的反馈界面 -->
+    <string name="me_setting_feedback_title">意见反馈</string>
+    <string name="me_setting_feedback_post">提交</string>
+    <string name="me_setting_feedback_num">还可输入100个字符</string>
+
+    <!-- 我的关于界面 -->
+
+    <string name="me_setting_about_title">关于诺丁汉</string>
+    <string name="me_setting_about_body">qqqqq</string>
+
+
+    <!-- 我的信息界面 -->
+    <string name="me_myinfo">个人信息</string>
+    <string name="me_myinfo_mypic">头像</string>
+    <string name="me_myinfo_name">姓名</string>
+    <string name="me_myinfo_gender">性别</string>
+    <string name="me_myinfo_phone">手机</string>
+    <string name="me_myinfo_idcard">身份证</string>
+    <string name="me_myinfo_location">地区</string>
+    <string name="me_myinfo_education">教育信息</string>
+    <string name="me_myinfo_email">电子邮箱</string>
+    <string name="me_myinfo_qq">QQ</string>
+    <string name="me_myinfo_wx">微信</string>
+    <string name="me_myinfo_birthday">生日</string>
+    <string name="me_myinfo_company">工作单位</string>
+    <string name="me_myinfo_company_address">单位地址</string>
+    <string name="me_myinfo_industry">行业</string>
+    <string name="me_myinfo_position">职位</string>
+    <string name="me_myinfo_word">个性签名</string>
+    <string name="me_myinfo_favor">爱好</string>
+
+    <!-- 我的文件界面 -->
+
+    <string name="me_document_title">我的文件</string>
+
+    <!-- 我的职位界面 -->
+
+    <string name="me_position_title">我的职位</string>
+
+    <string-array name="position_tabname">
+        <item>已申请</item>
+        <item>已收藏</item>
+        <item>已发布</item>
+    </string-array>
+
+
+    <!-- 我的收藏界面 -->
+
+    <string name="me_collection_title">我的收藏</string>
+
+    <string-array name="collection_tabname">
+        <item>资讯</item>
+        <item>相册</item>
+        <item>职位</item>
+    </string-array>
+
+
+    <!-- 新闻详情界面 -->
+    <string name="news_detaile_button_01">返回</string>
+    <string name="news_detaile_button_02">收藏</string>
+    <string name="news_detaile_button_03">评论</string>
+    <string name="news_detaile_button_04">更多</string>
+
+
+</resources>

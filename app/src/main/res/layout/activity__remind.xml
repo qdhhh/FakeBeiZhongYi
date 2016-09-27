@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".me.setting.Activity_Remind">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorDefault">
+
+        <ImageView
+            android:id="@+id/me_setting_remind_backicon_iv_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/tongyong_bar_icon1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/me_setting_remind"
+            android:textColor="@color/whitetext"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitetext"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/me_setting_remind"
+                android:textColor="@color/textColor_black_01"
+                android:textSize="16dip" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/tongyong_sousuo_kuang"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/me_setting_receivepush"
+                    android:textColor="@color/textColor_black_01"
+                    android:textSize="16dip" />
+
+                <CheckBox
+                    android:id="@+id/me_setting_remind_receivepush_cb_id"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/select_me_setting_remind"
+                    android:button="@null"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14.6dip"
+                android:text="@string/me_setting_chat_remind"
+                android:textColor="@color/textColor_black_01"
+                android:textSize="16dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14.6dip"
+                android:background="@drawable/tongyong_sousuo_kuang"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="10dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/me_setting_chat_new_remind"
+                        android:textColor="@color/textColor_black_01"
+                        android:textSize="16dip" />
+
+                    <CheckBox
+                        android:id="@+id/me_setting_remind_chat_cb_id"
+                        android:layout_width="24dip"
+                        android:layout_height="24dip"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/select_me_setting_remind"
+                        android:button="@null"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tongyong_list_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="10dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/me_setting_chat_sound_remind"
+                        android:textColor="@color/textColor_black_01"
+                        android:textSize="16dp" />
+
+                    <CheckBox
+                        android:id="@+id/me_setting_remind_sound_cb_id"
+                        android:layout_width="24dip"
+                        android:layout_height="24dip"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/select_me_setting_remind"
+                        android:button="@null"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tongyong_list_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="10dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/me_setting_chat_shock_remind"
+                        android:textColor="@color/textColor_black_01"
+                        android:textSize="16dip" />
+
+                    <CheckBox
+                        android:id="@+id/me_setting_remind_shock_cb_id"
+                        android:layout_width="24dip"
+                        android:layout_height="24dip"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/select_me_setting_remind"
+                        android:button="@null"
+                        android:checked="false" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="@string/me_setting_group_remind"
+                android:textColor="@color/textColor_black_01"
+                android:textSize="16dip" />
+
+            <RelativeLayout
+                android:id="@+id/me_setting_group_setting_rl_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/tongyong_sousuo_kuang"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/me_setting_group_setting"
+                    android:textColor="@color/textColor_black_01"
+                    android:textSize="16dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/tongyong_list_arrow" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="@string/me_setting_no_remind"
+                android:textColor="@color/textColor_black_01"
+                android:textSize="16dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14.6dip"
+                android:background="@drawable/tongyong_sousuo_kuang"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="10dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/me_setting_no_remind_setting"
+                        android:textColor="@color/textColor_black_01"
+                        android:textSize="16dip" />
+
+                    <CheckBox
+                        android:id="@+id/me_setting_remind_no_cb_id"
+                        android:layout_width="24dip"
+                        android:layout_height="24dip"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/select_me_setting_remind"
+                        android:button="@null"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_day_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tongyong_list_line"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_start_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="10dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="开始时间"
+                        android:textColor="@color/textColor_black_01"
+                        android:textSize="16dip" />
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#028505"
+                        android:textSize="12dip" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_day_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tongyong_list_line"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_end_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="10dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="结束时间"
+                        android:textColor="@color/textColor_black_01"
+                        android:textSize="16dip" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#028505"
+                        android:textSize="12dip" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
