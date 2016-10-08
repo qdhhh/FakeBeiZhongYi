@@ -40,7 +40,8 @@
         <activity android:name=".me.Activity_Position" />
         <activity android:name=".me.Activity_Collection" />
         <activity android:name=".mainpage.Activity_News_Detail" />
-        <activity android:name=".me.setting.Activity_Setting_RemindGroup"></activity>
+        <activity android:name=".me.setting.Activity_Setting_RemindGroup" />
+        <activity android:name=".function.activity.Activity_Activity"></activity>
     </application>
 
 </manifest>

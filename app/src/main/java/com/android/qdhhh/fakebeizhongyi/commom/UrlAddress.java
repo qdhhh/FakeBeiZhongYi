@@ -32,7 +32,8 @@ public class UrlAddress {
     public static final String Url_ModifyUserName  = "ModifyUserName";
     public static final String Url_ModifyPasswd  = "ModifyPasswd";
     public static final String Url_About  = "About";
-
+    public static final String Url_GetAtCoterie  = "GetAtCoterie";
+    public static final String Url_KeyWordsSearchAt  = "KeyWordsSearchAt";
 
 
 

@@ -46,7 +46,6 @@ public class Activity_Collection extends AppCompatActivity {
 
         positionViewPagerAdapter  = new Activity_Collection.CollectionViewPagerAdapter(getSupportFragmentManager());
         me_collection_vp_id.setAdapter(positionViewPagerAdapter);
-
         me_collection_tab_id.setupWithViewPager(me_collection_vp_id);
     }
 

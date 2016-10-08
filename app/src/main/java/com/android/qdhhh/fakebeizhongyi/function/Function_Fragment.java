@@ -1,6 +1,7 @@
 package com.android.qdhhh.fakebeizhongyi.function;
 
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.qdhhh.fakebeizhongyi.R;
+import com.android.qdhhh.fakebeizhongyi.function.activity.Activity_Activity;
 
 
 public class Function_Fragment extends Fragment {
@@ -116,6 +118,7 @@ public class Function_Fragment extends Fragment {
                     break;
                 }
                 case 1: {
+                    startActivity(new Intent(getContext(), Activity_Activity.class));
                     break;
                 }
                 case 2: {

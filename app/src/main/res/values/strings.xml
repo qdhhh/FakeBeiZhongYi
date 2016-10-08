@@ -222,4 +222,20 @@
     <string name="news_detaile_button_04">更多</string>
 
 
+    <!-- 校友活动界面-->
+    <string name="activity_title">活动</string>
+    <string name="activity_search">搜索</string>
+
+    <string-array name="activity_tab_names">
+        <item>全部</item>
+        <item>公益</item>
+        <item>聚会</item>
+        <item>沙龙</item>
+        <item>会议</item>
+        <item>讲座</item>
+        <item>培训</item>
+        <item>旅游</item>
+    </string-array>
+
+
 </resources>
