@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.android.qdhhh.fakebeizhongyi.Activity_Login;
 import com.android.qdhhh.fakebeizhongyi.R;
+import com.yonyou.sns.im.core.YYIMChatManager;
 
 public class Activity_Me_Setting extends AppCompatActivity {
 
@@ -95,6 +96,8 @@ public class Activity_Me_Setting extends AppCompatActivity {
                 case R.id.btn_logout: {
 
                     startActivity(new Intent(Activity_Me_Setting.this, Activity_Login.class));
+                    YYIMChatManager.getInstance().logout();
+
                     finishAffinity();
 
                     break;

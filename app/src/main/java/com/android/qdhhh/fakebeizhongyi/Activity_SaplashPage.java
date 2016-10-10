@@ -10,6 +10,12 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.android.qdhhh.fakebeizhongyi.im.CusTokenProvider;
+import com.android.qdhhh.fakebeizhongyi.im.CusYYMessageNotifyListener;
+import com.yonyou.sns.im.core.YYIMChat;
+import com.yonyou.sns.im.core.YYIMChatManager;
+import com.yonyou.sns.im.core.YYIMProviderHandler;
+
 public class Activity_SaplashPage extends AppCompatActivity {
 
     private SharedPreferences sharedPreferences;
@@ -21,6 +27,7 @@ public class Activity_SaplashPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity__saplash_page);
         setStatus();
         sharedPreferences = getSharedPreferences("isFirstTime", Context.MODE_PRIVATE);

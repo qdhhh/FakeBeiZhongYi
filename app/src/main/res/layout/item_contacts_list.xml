@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/whitetext"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_contacts_pinyin_tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <com.android.qdhhh.fakebeizhongyi.view.RoundImageView
+            android:id="@+id/item_contacts_img_iv_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/common_user_icon" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_contacts_name_tv_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/item_contacts_company_tv_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/item_contacts_tele_iv_id"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/dianhua" />
+    </LinearLayout>
+
+</LinearLayout>

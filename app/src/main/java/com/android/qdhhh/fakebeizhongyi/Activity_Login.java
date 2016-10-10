@@ -13,15 +13,21 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.qdhhh.fakebeizhongyi.commom.Constants;
 import com.android.qdhhh.fakebeizhongyi.commom.LocalInfo;
 import com.android.qdhhh.fakebeizhongyi.commom.UrlAddress;
 import com.android.qdhhh.fakebeizhongyi.utils.AndroidUtils;
 import com.android.qdhhh.fakebeizhongyi.utils.MD5Utils;
+import com.yonyou.sns.im.config.YYIMPreferenceConfig;
+import com.yonyou.sns.im.core.YYIMCallBack;
+import com.yonyou.sns.im.core.YYIMChatManager;
+import com.yonyou.sns.im.core.YYIMSessionManager;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -299,16 +305,17 @@ public class Activity_Login extends AppCompatActivity {
                 super.onSuccess(t);
 
                 try {
-                    int  i = new JSONObject(t).getInt("response");
+                    int i = new JSONObject(t).getInt("response");
                     String msg = new JSONObject(t).getString("failmsg");
-                    if (i==1) {
-                        Toast.makeText(Activity_Login.this, "登陆成功", Toast.LENGTH_SHORT).show();
+                    if (i == 1) {
                         setLocalInfo(t);
-                        startActivity(new Intent(Activity_Login.this, MainActivity.class));
-                        finish();
-                    }else{
+                        Toast.makeText(Activity_Login.this, "登陆成功", Toast.LENGTH_SHORT).show();
+                        loginYYIM(LocalInfo.userid,
+                                et_number.getText().toString(),
+                                LocalInfo.username,
+                                et_password.getText().toString());
+                    } else {
                         Toast.makeText(Activity_Login.this, msg, Toast.LENGTH_SHORT).show();
-
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -321,9 +328,57 @@ public class Activity_Login extends AppCompatActivity {
                 super.onFinish();
             }
         });
-
-
     }
+
+    /**
+     * 登录用友IM
+     *
+     * @param userID
+     * @param userName
+     * @param nickName
+     * @param passWord
+     */
+    private void loginYYIM(String userID, String userName, String nickName,
+                           String passWord) {
+
+        YYIMPreferenceConfig.getInstance().setString(
+                Constants.FRONT_LAST_LOGIN_USERID, userID);
+        YYIMPreferenceConfig.getInstance().setString(
+                Constants.FRONT_LAST_LOGIN_ACCOUNT, userName);
+        YYIMPreferenceConfig.getInstance().setString(
+                Constants.FRONT_LAST_LOGIN_PASSWORD, passWord);
+        YYIMPreferenceConfig.getInstance().setString(
+                Constants.FRONT_LAST_LOGIN_NICKNAME, nickName);
+        YYIMSessionManager.getInstance().clearSession();
+        YYIMChatManager.getInstance().getYmSettings()
+                .setCustomAppkey(Constants.appid);
+        YYIMChatManager.getInstance().getYmSettings()
+                .setCustomEtpkey(Constants.etpid);
+
+        Log.i("IM","------------");
+
+        // 登录
+        YYIMChatManager.getInstance().login(userID, new YYIMCallBack() {
+
+            @Override
+            public void onSuccess(Object object) {
+                Log.i("IM","IM登录成功");
+                startActivity(new Intent(Activity_Login.this, MainActivity.class));
+                finish();
+            }
+
+            @Override
+            public void onProgress(int errno, String errmsg) {
+                Log.i("IM","IM登录中------------");
+            }
+
+            @Override
+            public void onError(int errno, String errmsg) {
+                Log.i("IM","IM登录失败");
+            }
+        });
+    }
+
 
     private void setLocalInfo(String t) {
 

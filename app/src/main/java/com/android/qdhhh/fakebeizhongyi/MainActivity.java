@@ -1,5 +1,8 @@
 package com.android.qdhhh.fakebeizhongyi;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -16,6 +19,9 @@ import com.android.qdhhh.fakebeizhongyi.contacts.Contacts_Fragment;
 import com.android.qdhhh.fakebeizhongyi.function.Function_Fragment;
 import com.android.qdhhh.fakebeizhongyi.mainpage.MainPage_Fragment;
 import com.android.qdhhh.fakebeizhongyi.me.Me_Fragment;
+import com.yonyou.sns.im.core.YYIMDBNotifier;
+import com.yonyou.sns.im.core.YYIMRosterManager;
+import com.yonyou.sns.im.entity.YYRoster;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -55,6 +61,18 @@ public class MainActivity extends AppCompatActivity {
         initViews();
 
         initeFragmentsData();
+
+        setBroadcastReceiver();
+    }
+
+    /**
+     * 设置广播接收者
+     */
+    private void setBroadcastReceiver() {
+
+
+
+
     }
 
     private void setMainStatus() {
@@ -64,6 +82,10 @@ public class MainActivity extends AppCompatActivity {
         decorView.setSystemUiVisibility(option);
     }
 
+
+    /**
+     * 初始化碎片数据
+     */
     private void initeFragmentsData() {
 
         manger = getSupportFragmentManager();
@@ -86,6 +108,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * 设置导航选择
+     * @param num
+     */
     private void setSelect(int num) {
 
         transition = manger.beginTransaction();
@@ -100,6 +126,10 @@ public class MainActivity extends AppCompatActivity {
         currentFragment = toFragment;
     }
 
+
+    /**
+     * 初始化控件
+     */
     private void initViews() {
 
         bottomTabClickListener = new BottomTabClickListener();
@@ -121,6 +151,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * 底部导航按钮的点击监听事件
+     */
     private final class BottomTabClickListener implements View.OnClickListener {
 
         @Override
@@ -163,6 +196,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * 设置底部的导航按钮
+     * @param view
+     */
     private void setBottomTab(View view) {
 
         main_iv_chat.setEnabled(true);
@@ -174,6 +211,11 @@ public class MainActivity extends AppCompatActivity {
         view.setEnabled(false);
     }
 
+
+    /**
+     * 设置状态栏
+     * @param b
+     */
     private void setStatus(boolean b) {
 
         if (b) {
@@ -190,4 +232,26 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
+
+    /**
+     * 好友请求的广播接收者
+     */
+    private class RosterInviteReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+            if (intent.getAction().equals(YYIMDBNotifier.ROSTER_CHANGE)) {
+                List<YYRoster> list = YYIMRosterManager.getInstance().getInvites();
+                for (YYRoster roster : list) {
+                }
+
+            }
+
+
+        }
+    }
+
+
 }

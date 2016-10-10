@@ -20,6 +20,8 @@ android {
     useLibrary 'org.apache.http.legacy'
 }
 
+
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile files('libs/KJFrameForAndroid_v2.227.jar')
@@ -35,4 +37,5 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.navercorp.pulltorefresh:library:3.2.3@aar'
     testCompile 'junit:junit:4.12'
+    compile files('libs/YYImSdk.jar')
 }

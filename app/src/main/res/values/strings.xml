@@ -237,5 +237,13 @@
         <item>旅游</item>
     </string-array>
 
+    <!-- 联系人界面-->
+    <string name="contacts_tab1">校友分会</string>
+    <string name="contacts_tab2">学校社团</string>
+    <string name="contacts_tab3">校友群组</string>
+    <string name="contacts_tab4">讨论组</string>
+
+
+
 
 </resources>
