@@ -34,13 +34,14 @@
             android:id="@+id/contact_ptrllv_id"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp" />
+            android:layout_margin="10dp"
+            android:footerDividersEnabled="false" />
 
         <com.android.qdhhh.fakebeizhongyi.contacts.LetterIndexView
             android:id="@+id/contacts_letter_id"
             android:layout_width="20dp"
             android:layout_height="match_parent"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true" />
 
         <TextView
             android:id="@+id/show_letter_in_center"
